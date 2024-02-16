@@ -1,0 +1,19 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans serif;
+}
+.img-box{
+	background: var(--img) center;
+	background-size: cover;
+	flex-basis: 300px;
+	position: relative;
+	filter: grayscale(100%) opacity(35%);
+}
+.img-box:nth-child(odd) {
+	transform: translateY(-50px);
+}
+.img-box:hover {
+	flex-basis: 400px;
+	filter: grayscale(0%) opacity(100%);
+}
